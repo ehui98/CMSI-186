@@ -110,34 +110,34 @@ public class CalendarStuff {
      */
      public static long daysBetween( long month1, long day1, long year1, long month2, long day2, long year2 ) {
           long y1 = 0; //initializing all my variables
-          long m1 = 0;
+          long m1 = 1;
           long date1 = 0;
           long y2 = 0;
-          long m2 = 0;
+          long m2 = 1;
           long date2 = 0;
           long days = 0;
-          if (y1 <= year1) { 
+          while (y1 < year1) { 
               y1++;
               date1 = date1 + 365;
               if (isLeapYear(year1)) {
                   date1++;
               }
           }
-          if (m1 <= month1) {
+          while (m1 < month1) {
               m1++;
               date1 = date1 + (daysMonth(m1));
               if (m1 == month1) {
                   date1 = date1 + day1;
               }
           }
-          if (y2 <= year2) {
+          while (y2 < year2) {
               y2++;
               date2 = date2 + 365;
               if (isLeapYear(year2)) {
                   date2++;
               }
           }
-          if (m2 <= month2) {
+          while (m2 < month2) {
               m2++;
               date2 = date2 + (daysMonth(m2));
               if (m2 == month2) {
