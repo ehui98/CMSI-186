@@ -18,6 +18,7 @@
  */
 
 public class CalendarStuff {
+     //I did not inlcude serveral of the optional methods
 
      /**
      * A listing of the days of the week, assigning numbers; Note that the week arbitrarily starts on Sunday
