@@ -110,33 +110,9 @@ public class StringStuff {
         return s; 
     }
     
+    //first only has even letters then checks if there are duplicate letters, then removes them if so
     public static String evensOnlyNoDupes(String s) {
-        s = s.replaceAll("a", "");
-        s = s.replaceAll("c", "");
-        s = s.replaceAll("e", "");
-        s = s.replaceAll("g", "");
-        s = s.replaceAll("i", "");
-        s = s.replaceAll("k", "");
-        s = s.replaceAll("m", "");
-        s = s.replaceAll("o", "");
-        s = s.replaceAll("q", "");
-        s = s.replaceAll("s", "");
-        s = s.replaceAll("u", "");
-        s = s.replaceAll("w", "");
-        s = s.replaceAll("y", "");
-        s = s.replaceAll("A", "");
-        s = s.replaceAll("C", "");
-        s = s.replaceAll("E", "");
-        s = s.replaceAll("G", "");
-        s = s.replaceAll("I", "");
-        s = s.replaceAll("K", "");
-        s = s.replaceAll("M", "");
-        s = s.replaceAll("O", "");
-        s = s.replaceAll("Q", "");
-        s = s.replaceAll("S", "");
-        s = s.replaceAll("U", "");
-        s = s.replaceAll("W", "");
-        s = s.replaceAll("Y", "");
+        s = evensOnly(s);
         String newS = "";
         for (int i = 0; i < s.length(); i++) {
             if(!newS.contains(String.valueOf(s.charAt(i)))) {
@@ -146,33 +122,9 @@ public class StringStuff {
         return newS;
     }
     
+    //first only has odd letters then checks if there are duplicate letters, then removes them if so
     public static String oddsOnlyNoDupes(String s) {
-        s = s.replaceAll("b", "");
-        s = s.replaceAll("d", "");
-        s = s.replaceAll("f", "");
-        s = s.replaceAll("h", "");
-        s = s.replaceAll("j", "");
-        s = s.replaceAll("l", "");
-        s = s.replaceAll("n", "");
-        s = s.replaceAll("p", "");
-        s = s.replaceAll("r", "");
-        s = s.replaceAll("t", "");
-        s = s.replaceAll("v", "");
-        s = s.replaceAll("x", "");
-        s = s.replaceAll("z", "");
-        s = s.replaceAll("B", "");
-        s = s.replaceAll("D", "");
-        s = s.replaceAll("F", "");
-        s = s.replaceAll("H", "");
-        s = s.replaceAll("J", "");
-        s = s.replaceAll("L", "");
-        s = s.replaceAll("N", "");
-        s = s.replaceAll("P", "");
-        s = s.replaceAll("R", "");
-        s = s.replaceAll("T", "");
-        s = s.replaceAll("V", "");
-        s = s.replaceAll("X", "");
-        s = s.replaceAll("Z", "");
+        s = oddsOnly(s);
         String newS = "";
         for (int i = 0; i < s.length(); i++) {
             if(!newS.contains(String.valueOf(s.charAt(i)))) {
