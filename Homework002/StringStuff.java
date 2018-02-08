@@ -22,8 +22,6 @@
 *  @version 1.2.0 2017-02-07   Elizabeth Hui Adding the code
 * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-
-import java.util.Scanner;
 import java.util.Set;
 import java.util.LinkedHashSet;
 
