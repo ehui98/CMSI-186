@@ -115,7 +115,7 @@ public class StringStuff {
         s = evensOnly(s);
         String newS = "";
         for (int i = 0; i < s.length(); i++) {
-            if(!newS.contains(String.valueOf(s.charAt(i)))) {
+            if(!newS.contains(String.valueOf(s.charAt(i))) && !newS.contains(String.valueOf(s.toLowerCase().charAt(i)))) {
                 newS += String.valueOf(s.charAt(i));
             }
         }
@@ -127,7 +127,7 @@ public class StringStuff {
         s = oddsOnly(s);
         String newS = "";
         for (int i = 0; i < s.length(); i++) {
-            if(!newS.contains(String.valueOf(s.charAt(i)))) {
+            if(!newS.contains(String.valueOf(s.charAt(i))) && !newS.contains(String.valueOf(s.toLowerCase().charAt(i)))) {
                 newS += String.valueOf(s.charAt(i));
             }
         }
